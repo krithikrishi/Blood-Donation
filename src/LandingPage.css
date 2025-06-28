@@ -1,0 +1,73 @@
+.landing-container {
+    height: 100vh;
+    background: #1a1a1a;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  header {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+  }
+  
+  nav .btn {
+    margin-left: 20px;
+    padding: 10px 18px;
+    background-color: #d62828;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+  }
+  
+  nav .btn:hover {
+    background-color: #a21f1f;
+  }
+  
+  .drip {
+    position: relative;
+    color: #ff4c4c;
+    font-weight: 700;
+  }
+  
+  .drip::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    width: 8px;
+    height: 12px;
+    background-color: #b30000;
+    border-radius: 50%;
+    transform: translateX(-50%) scaleY(1);
+    animation: drip 2.2s infinite ease-in;
+    transform-origin: top center;
+    opacity: 0;
+  }
+  
+  @keyframes drip {
+    0% {
+      transform: translateX(-50%) translateY(0) scaleY(0.8);
+      opacity: 0;
+    }
+    10% {
+      opacity: 1;
+    }
+    60% {
+      transform: translateX(-50%) translateY(25px) scaleY(1.5);
+      opacity: 1;
+    }
+    100% {
+      transform: translateX(-50%) translateY(40px) scaleY(0.3);
+      opacity: 0;
+    }
+  }
+  

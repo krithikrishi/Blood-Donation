@@ -1,0 +1,90 @@
+/* Reset & Layout */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.dashboard-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: #f3f4f6;
+}
+
+/* Logout styling */
+.logout-button-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1rem;
+}
+
+.logout-button {
+  background-color: #dc2626;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.logout-button:hover {
+  background-color: #b91c1c;
+}
+
+/* Welcome screen */
+.welcome-container {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  text-align: center;
+}
+
+.welcome-heading {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #1f2937;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.action-button {
+  padding: 0.75rem 1.5rem;
+  border-radius: 9999px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  color: white;
+}
+
+.action-button.donate {
+  background-color: #dc2626;
+}
+.action-button.donate:hover {
+  background-color: #b91c1c;
+}
+
+.action-button.request {
+  background-color: #2563eb;
+}
+.action-button.request:hover {
+  background-color: #1d4ed8;
+}
+
+/* Main content area */
+.main-section {
+  flex-grow: 1;
+  padding: 2rem;
+}
+
+/* Chatbot placement */
+.chatbot-container {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1rem;
+}
