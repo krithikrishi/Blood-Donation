@@ -52,17 +52,18 @@ git clone https://github.com/krithikrishi/blood-donation.git
 cd blood-donation
 ```
 ### 🔐 Create a .env File in the Root Directory
-```bash
+
 MONGODB_URI=your_mongodb_connection_string  
 JWT_SECRET=your_jwt_secret_key  
 GOOGLE_MAPS_API_KEY=your_google_maps_api_key  
 OPENROUTER_API_KEY=your_openrouter_api_key  
 PORT=5000
-```
+
 
 ### 📦 Installation
-```bash
+
 Backend Dependencies:
+```bash
 cd backend
 npm install
 ```
