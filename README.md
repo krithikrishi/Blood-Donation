@@ -74,8 +74,8 @@ npm install
 ```
 
 ### 🚀 Running the Project
-```bash
 Start Backend Server:
+```bash
 cd backend
 npm run dev
 ```
@@ -87,6 +87,7 @@ npm run dev
 ```
 
 ### Run the AI Model (optional, separate terminal):
+```bash
 cd ai-model
 python app.py
 ```
